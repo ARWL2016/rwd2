@@ -1,0 +1,21 @@
+{
+  "name": "ps-rwd1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "compile:sass": "node-sass -w scss/ -o css/",
+    "dev": "npm-run-all --parallel watch compile:sass",
+    "kill": "taskkill /f /im node.exe"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.2",
+    "node-sass": "4.7.1",
+    "npm-run-all": "4.1.2"
+  }
+}
